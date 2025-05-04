@@ -1,0 +1,15 @@
+.form-input input,
+.form-input textarea {
+  padding: 10px;
+  border: 2px solid gray;
+  border-radius: 12px;
+}
+
+.form-input {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 12px;
+  flex-grow: 1;
+  color: black;
+}
