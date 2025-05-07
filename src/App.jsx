@@ -18,8 +18,7 @@ function App() {
       startDate: '',
       endDate: '',
       location: ''
-    },
-
+    }
   ]);
 
   const [workInfo, setWorkInfo] = useState([

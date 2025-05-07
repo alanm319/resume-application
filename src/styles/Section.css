@@ -4,3 +4,10 @@
   border-radius: 12px;
   color: black;
 }
+
+.form-subsection {
+  padding: 8px;
+  background-color: white;
+  /* border-radius: 12px; */
+  color: black;
+}
