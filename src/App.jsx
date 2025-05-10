@@ -2,6 +2,7 @@ import { useState } from 'react'
 import './styles/App.css';
 import ContactSection from './components/ContactSection';
 import EducationSection from './components/EducationSection';
+import ExperienceSection from './components/ExperienceSection';
 import Resume from './components/Resume'
 
 function App() {
@@ -21,10 +22,10 @@ function App() {
     }
   ]);
 
-  const [workInfo, setWorkInfo] = useState([
+  const [experienceInfo, setExperienceInfo] = useState([
     {
       company: '',
-      position: '',
+      title: '',
       startDate: '',
       endDate: '',
       location: '',
@@ -44,11 +45,16 @@ function App() {
           educationInfo={educationInfo}
           setEducationInfo={setEducationInfo}
         />
+
+        <ExperienceSection
+          experienceInfo={experienceInfo}
+          setExperienceInfo={setExperienceInfo} 
+        />
       </div>
       <Resume
         contactInfo={contactInfo}
         educationInfo = {educationInfo}
-        workInfo = {workInfo}
+        experienceInfo = {experienceInfo}
       />
     </div>
   );

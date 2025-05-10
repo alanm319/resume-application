@@ -11,3 +11,8 @@
   /* border-radius: 12px; */
   color: black;
 }
+
+.description-field {
+  display: flex;
+  flex-direction: column;
+}

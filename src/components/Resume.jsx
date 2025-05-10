@@ -1,5 +1,5 @@
 import '../styles/Resume.css'
-function Resume({contactInfo, educationInfo, workInfo}) {
+function Resume({contactInfo, educationInfo, experienceInfo}) {
   return (
     <div className="resume-container">
       {/* contact info */}
@@ -28,13 +28,13 @@ function Resume({contactInfo, educationInfo, workInfo}) {
       )}
 
       {/* work info */}
-      {workInfo.length > 0 && (
+      {experienceInfo.length > 0 && (
         <div className="resume-section">
           <h3>Experience</h3>
-          {workInfo.map((job, index) => (
+          {experienceInfo.map((job, index) => (
             <div key={index} className="resume-item">
               <div className="resume-item-title">
-                <strong>{job.company}</strong>, {job.position}
+                <strong>{job.company}</strong>, {job.title}
               </div>
               <div className="resume-item-subtitle">
                 {job.startDate} - {job.endDate}
